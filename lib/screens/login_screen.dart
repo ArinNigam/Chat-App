@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Color(0xFF031625),
       body: ModalProgressHUD(
         inAsyncCall: spinner,
         child: Center(

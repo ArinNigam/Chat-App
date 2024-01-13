@@ -19,7 +19,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Color(0xFF031625),
       body: ModalProgressHUD(
         inAsyncCall: spinner,
         child: Padding(

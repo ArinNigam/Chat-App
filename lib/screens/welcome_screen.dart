@@ -38,7 +38,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Color(0xFF031625),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
@@ -54,16 +54,20 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                     height: animation.value * 100,
                   ),
                 ),
+                SizedBox(
+                  width: 20,
+                ),
                 AnimatedTextKit(
                   totalRepeatCount: 1,
                   animatedTexts: [
                     TypewriterAnimatedText(
                         speed: Duration(milliseconds: 200),
                         textStyle: TextStyle(
-                            fontSize: 40.0,
+                            fontFamily: 'Times New Roman',
+                            fontSize: 32.0,
                             fontWeight: FontWeight.w900,
-                            color: Colors.black54),
-                        'Flash Chat')
+                            color: Colors.greenAccent),
+                        'Chat Connect')
                   ],
                 ),
               ],
