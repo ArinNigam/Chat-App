@@ -50,7 +50,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 Hero(
                   tag: 'logo',
                   child: Container(
-                    child: Image.asset('../assets/images/logo.png'),
+                    width: animation.value * 50,
+                    child: Image.asset('lib/assets/images/logo.png'),
                     height: animation.value * 100,
                   ),
                 ),

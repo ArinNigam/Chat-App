@@ -32,7 +32,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 tag: 'logo',
                 child: Container(
                   height: 100.0,
-                  child: Image.asset('images/logo.png'),
+                  child: Image.asset('lib/assets/images/logo.png'),
                 ),
               ),
               SizedBox(
@@ -90,26 +90,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           ),
         ),
       ),
-    );
-  }
-}
-
-class TextBox extends StatelessWidget {
-  TextBox({
-    super.key,
-    required this.onChanged,
-    required this.hintText,
-  });
-  Function onChanged;
-  String hintText;
-  @override
-  Widget build(BuildContext context) {
-    return TextField(
-      onChanged: (value) {
-        //Do something with the user input.
-        onChanged;
-      },
-      decoration: kTextFieldDecoration,
     );
   }
 }

@@ -14,12 +14,11 @@ class AvatarCard extends StatelessWidget {
               CircleAvatar(
                 radius: 23,
                 child: Image.asset(
-                  "../assets/images/profile_pic.png",
+                  "lib/assets/images/profile_pic.png",
                   color: Colors.white,
                   height: 30,
                   width: 30,
                 ),
-                backgroundColor: Colors.blueGrey[200],
               ),
               Positioned(
                 bottom: 0,
