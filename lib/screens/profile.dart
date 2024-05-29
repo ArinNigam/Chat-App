@@ -1,6 +1,7 @@
 import 'package:firebase/screens/chat_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import '../components/avatar_card.dart';
 
 User? loggedInUser = FirebaseAuth.instance.currentUser;
 
@@ -72,10 +73,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     SizedBox(
                       height: 20,
                     ),
-                    Container(
-                        height: 100,
-                        width: 100,
-                        child: Image.asset("images/profile_pic.png")),
+                    AvatarCard(),
                     SizedBox(
                       height: 20,
                     ),

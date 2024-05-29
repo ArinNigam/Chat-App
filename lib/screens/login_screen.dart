@@ -40,7 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       tag: 'logo',
                       child: Container(
                         height: 100.0,
-                        child: Image.asset('images/logo.png'),
+                        child: Image.asset('../assets/images/logo.png'),
                       ),
                     ),
                     SizedBox(
@@ -123,7 +123,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Image.asset('images/google_icon.png'),
+                            Image.asset('../assets/icons/google_icon.png'),
                             SizedBox(
                               width: 20,
                             ),
