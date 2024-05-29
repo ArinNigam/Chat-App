@@ -77,7 +77,8 @@ class _ChatScreenState extends State<ChatScreen> {
     return Scaffold(
       appBar: AppBar(
         actions: <Widget>[
-          IconButton(onPressed: () {}, icon: Image.asset('images/logo.png')),
+          IconButton(
+              onPressed: () {}, icon: Image.asset('../assets/images/logo.png')),
           IconButton(
               icon: const Icon(Icons.close),
               onPressed: () {
@@ -92,7 +93,7 @@ class _ChatScreenState extends State<ChatScreen> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/chat_bg.jpg'),
+            image: AssetImage('../assets/images/chat_bg.jpg'),
             fit: BoxFit.cover,
           ),
         ),
